@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Social media proposal for Davie Designer Dental</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#302F2D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#E0AF3C; --char:#302F2D; --char2:#242321; --mist:#F1EFEB; --paper:#FAF9F7; --white:#fff;
+  --ink:#302F2D; --dim:#5E5B56; --line:#E2DFD9; --on-dark:#E4E0D8;
+  --ease:cubic-bezier(.23,1,.32,1);
+  --gutter:clamp(16px,4vw,48px);
+  --r:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:92px;-webkit-text-size-adjust:100%}
+body{font-family:"Hanken Grotesk",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:3px}
+::selection{background:var(--gold);color:var(--char)}
+*{scrollbar-color:var(--gold) transparent}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1180px,100% - var(--gutter)*2);margin-inline:auto}
+h1,h2,h3,.num,.big{font-family:"Schibsted Grotesk",system-ui,sans-serif}
+
+/* header */
+.top{position:sticky;top:0;z-index:50;background:var(--char);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:78px}
+.brand img{height:66px;width:auto;object-fit:contain}
+.steps{display:flex;gap:4px}
+.steps a{font-size:14px;font-weight:600;text-decoration:none;color:#D9D5CD;padding:10px 16px;border-radius:99px;min-height:44px;min-width:44px;justify-content:center;display:inline-flex;align-items:center;transition:background-color .2s var(--ease),color .2s var(--ease)}
+.steps a b{margin-right:8px;color:var(--gold);font-weight:700}
+.steps a.on{background:rgba(255,255,255,.14);color:#fff}
+.steps a span.t{display:inline}
+@media (hover:hover){.steps a:hover{background:rgba(255,255,255,.1);color:#fff}}
+
+/* hero */
+.hero{background:linear-gradient(160deg,#3a3936 0%,var(--char2) 70%);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-140px;top:-140px;width:560px;height:560px;border-radius:50%;background:var(--gold);opacity:.1;pointer-events:none}
+.hero .wrap{padding:clamp(44px,7vw,84px) 0 clamp(44px,6vw,76px);position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,64px);align-items:center}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.hero h1{font-weight:800;font-size:clamp(38px,5.6vw,68px);line-height:1.05;letter-spacing:-.025em;margin:16px 0 18px;max-width:14ch;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{font-size:clamp(16px,1.7vw,19px);color:var(--on-dark);max-width:46ch}
+.for{margin-top:22px;font-size:16px;color:var(--on-dark)}
+.for b{color:#fff}
+.path{margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.path a{display:block;text-decoration:none;padding:16px 18px;border-radius:var(--r);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);transition:transform .2s var(--ease),background-color .2s var(--ease)}
+.path a:active{transform:scale(.97)}
+@media (hover:hover){.path a:hover{transform:translateY(-3px);background:rgba(255,255,255,.13)}}
+.path small{display:block;font-size:12px;letter-spacing:.14em;font-weight:700;color:var(--gold)}
+.path span{display:block;margin-top:4px;font-weight:600;font-size:15.5px;line-height:1.3}
+.hero figure{position:relative}
+.hero figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:var(--r);box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+.hero figure::after{content:"";position:absolute;inset:18px -14px -14px 18px;border:2px solid var(--gold);border-radius:var(--r);z-index:-1}
+
+/* sections */
+section.blk{padding:clamp(56px,8vw,104px) 0}
+#hoy{background:var(--paper)}
+#propuesta{background:var(--mist)}
+#material{background:var(--white)}
+.sec-head{margin-bottom:clamp(28px,4.5vw,48px)}
+.num{display:block;font-weight:900;font-size:clamp(46px,7vw,84px);line-height:.9;color:transparent;-webkit-text-stroke:1.5px var(--gold);margin-bottom:12px}
+.sec-head h2{font-weight:800;font-size:clamp(30px,4.2vw,48px);line-height:1.06;letter-spacing:-.02em;color:var(--char);max-width:20ch;text-wrap:balance}
+.sec-head p{margin-top:12px;color:var(--dim);max-width:58ch;font-size:clamp(16px,1.6vw,18px)}
+
+/* 01 */
+.proof{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.4vw,28px);align-items:stretch}
+.score{background:var(--char);color:#fff;border-radius:var(--r);padding:clamp(26px,4vw,44px);display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.score .row{display:flex;gap:clamp(24px,5vw,56px);flex-wrap:wrap}
+.big{display:block;font-weight:900;font-size:clamp(64px,10vw,116px);line-height:.95;letter-spacing:-.03em;color:var(--gold)}
+.score span.l{display:block;margin-top:8px;font-size:17px;color:var(--on-dark);line-height:1.35}
+.stars{display:flex;gap:6px}
+.stars svg{width:28px;height:28px;fill:var(--gold)}
+.score p{font-size:17px;color:var(--on-dark);max-width:36ch}
+.shot{border-radius:var(--r);border:1px solid var(--line);background:var(--white);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+@media (hover:hover){.shot:hover{transform:translateY(-4px);box-shadow:0 26px 44px -30px rgba(36,35,33,.5)}}
+.shot button{all:unset;display:block;cursor:zoom-in;overflow:hidden;background:#fff;-webkit-tap-highlight-color:transparent}
+.shot button:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.shot button:active img{transform:scale(.99)}
+.shot img{width:100%;height:auto;transition:transform .2s var(--ease)}
+.shot figcaption{padding:16px 20px 20px;border-top:1px solid var(--line);display:grid;gap:3px}
+.shot figcaption b{font-size:16px}
+.shot figcaption small{font-size:14.5px;color:var(--dim)}
+.quote{margin-top:clamp(16px,2.4vw,28px);padding:clamp(26px,4vw,44px);border-radius:var(--r);background:var(--white);border:1px solid var(--line);display:grid;gap:14px}
+.quote blockquote{font-family:"Schibsted Grotesk",sans-serif;font-weight:700;font-size:clamp(20px,2.5vw,28px);line-height:1.25;letter-spacing:-.01em;max-width:34ch}
+.quote cite{font-style:normal;font-size:15px;color:var(--dim)}
+.now{margin-top:clamp(32px,5vw,56px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,56px)}
+.now div{border-top:3px solid var(--char);padding-top:16px}
+.now h3{font-size:22px;font-weight:800;color:var(--char);margin-bottom:6px}
+.now p{color:var(--dim);font-size:16.5px;max-width:44ch}
+
+/* 02 */
+.stage{display:grid;grid-template-columns:1fr minmax(300px,420px) 1fr;gap:clamp(20px,4vw,56px);align-items:center}
+.notes{display:grid;gap:26px}
+.note{padding:2px 0;max-width:300px;border-top:2px solid var(--gold);padding-top:14px}
+.notes.r .note{margin-left:auto}
+.note h3{font-size:19px;font-weight:800;color:var(--char);margin-bottom:4px}
+.note p{font-size:15.5px;color:var(--dim);line-height:1.5}
+.phone{all:unset;display:block;box-sizing:border-box;cursor:zoom-in;position:relative;border-radius:48px;padding:11px;background:#1a1918;box-shadow:0 40px 70px -34px rgba(36,35,33,.7);-webkit-tap-highlight-color:transparent;transition:transform .3s var(--ease)}
+.phone:focus-visible{outline:3px solid var(--gold);outline-offset:5px}
+.phone:active{transform:scale(.99)}
+.phone .screen{display:block;border-radius:38px;overflow:hidden;background:#fff;max-height:760px;position:relative}
+.phone .screen img{width:100%;height:auto}
+.phone .screen::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(transparent,rgba(26,25,24,.55))}
+.phone .zoom{position:absolute;right:22px;bottom:22px;z-index:1;font-size:13px;font-weight:700;background:var(--gold);color:var(--char);padding:10px 16px;border-radius:99px}
+.posts-head{margin:clamp(52px,7vw,88px) 0 18px;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}
+.posts-head h3{font-weight:800;font-size:clamp(26px,3.4vw,36px);color:var(--char);letter-spacing:-.015em}
+.posts-head p{font-size:15px;color:var(--dim)}
+.arrows{display:none;gap:8px}
+@media (hover:hover) and (pointer:fine){.arrows{display:flex}}
+.arrows button{width:48px;height:48px;border-radius:50%;border:1px solid var(--char);background:transparent;color:var(--char);cursor:pointer;display:grid;place-items:center;transition:background-color .2s var(--ease),color .2s var(--ease),transform .15s var(--ease)}
+.arrows button:hover{background:var(--char);color:#fff}
+.arrows button:active{transform:scale(.95)}
+.arrows svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px var(--gutter) 22px;margin:0 calc(var(--gutter)*-1);-webkit-overflow-scrolling:touch}
+.post{all:unset;box-sizing:border-box;flex:0 0 clamp(230px,64vw,310px);scroll-snap-align:start;border-radius:var(--r);overflow:hidden;background:#fff;box-shadow:0 14px 32px -22px rgba(36,35,33,.6);cursor:zoom-in;transition:transform .25s var(--ease)}
+.post:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+@media (hover:hover){.post:hover{transform:translateY(-5px)}}
+.post:active{transform:scale(.98)}
+.post img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.fb{margin-top:clamp(32px,5vw,56px);background:var(--char);color:#fff;border-radius:var(--r);padding:clamp(24px,4vw,44px);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(20px,4vw,48px);align-items:center}
+.fb h3{font-weight:800;font-size:clamp(24px,3vw,34px);letter-spacing:-.015em}
+.fb p{margin-top:10px;color:var(--on-dark);max-width:44ch}
+.fb .th{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.fb .th button{all:unset;display:block;cursor:zoom-in;border-radius:10px;overflow:hidden;aspect-ratio:4/5;-webkit-tap-highlight-color:transparent;transition:transform .2s var(--ease)}
+.fb .th button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.fb .th button:active{transform:scale(.97)}
+.fb .th img{width:100%;height:100%;object-fit:cover}
+
+/* 03 */
+.mat{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(14px,2vw,24px)}
+.ph{margin:0;border-radius:var(--r);overflow:hidden;background:var(--mist);transition:transform .3s var(--ease)}
+@media (hover:hover){.ph:hover{transform:translateY(-4px)}}
+.ph button{all:unset;display:block;width:100%;cursor:zoom-in;-webkit-tap-highlight-color:transparent}
+.ph button:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph figcaption{padding:12px 18px 14px;font-size:15px;font-weight:600;color:var(--char);background:#fff;border-top:1px solid var(--line)}
+.ph.s{grid-column:span 2}
+.ph.s img{aspect-ratio:1/1.1;object-position:center 20%}
+.ph.w{grid-column:span 3}
+.ph.w img{aspect-ratio:16/10}
+.mat-note{margin-top:20px;color:var(--dim);font-size:14px}
+
+/* close */
+.close{padding:clamp(56px,8vw,104px) 0 36px;background:var(--char);color:#fff}
+.close h2{font-weight:800;font-size:clamp(32px,5vw,56px);line-height:1.06;letter-spacing:-.02em;max-width:19ch;text-wrap:balance}
+.close h2 em{font-style:normal;color:var(--gold)}
+.close p.lead{margin-top:18px;color:var(--on-dark);max-width:56ch;font-size:clamp(16px,1.7vw,19px)}
+.svc{margin-top:34px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:12px}
+.svc div{padding:24px;border-radius:var(--r);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);font-size:16px;line-height:1.45;color:var(--on-dark)}
+.svc b{display:block;font-size:18px;margin-bottom:6px;color:#fff;font-family:"Schibsted Grotesk",sans-serif}
+.svc svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}
+.sign{margin-top:38px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-top:28px;border-top:1px solid rgba(255,255,255,.16)}
+.sign p{font-size:16px;color:var(--on-dark)}
+.sign p b{display:block;color:#fff;font-size:19px;font-family:"Schibsted Grotesk",sans-serif}
+.contact{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.contact a{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:99px;background:var(--gold);color:var(--char);font-weight:700;font-size:15px;text-decoration:none;overflow-wrap:anywhere;transition:transform .2s var(--ease),background-color .2s var(--ease),box-shadow .2s var(--ease)}
+.contact a:active{transform:scale(.97)}
+@media (hover:hover){.contact a:hover{transform:translateY(-2px);background:#EDC25A;box-shadow:0 12px 26px -14px rgba(0,0,0,.7)}}
+.contact svg{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+footer{margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);color:#C9C4BA;font-size:14px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* lightbox */
+dialog{border:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;color:#fff}
+dialog::backdrop{background:rgba(20,19,18,.93)}
+dialog .box{height:100%;overflow:auto;display:flex;justify-content:center;padding:68px 12px 28px;-webkit-overflow-scrolling:touch}
+dialog img{width:min(560px,100%);height:auto;border-radius:14px;align-self:flex-start;background:#fff}
+dialog button{position:fixed;top:14px;right:14px;z-index:2;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:var(--char);color:#fff;font-size:26px;line-height:1;cursor:pointer;transition:transform .15s var(--ease)}
+dialog button:active{transform:scale(.95)}
+dialog[open]{animation:lb .22s var(--ease)}
+@keyframes lb{from{opacity:0}to{opacity:1}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .55s var(--ease),transform .55s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1020px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero figure{display:none}
+  .stage{grid-template-columns:1fr;max-width:480px;margin-inline:auto}
+  .phone-col{order:-1}
+  .notes{gap:20px}.notes.r .note{margin-left:0}.note{max-width:none}
+  .proof{grid-template-columns:1fr}
+  .svc{grid-template-columns:1fr}
+  .fb{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .brand img{height:56px}
+  .steps a{padding:10px 14px}
+  .steps a span.t{display:none}
+  .steps a b{margin:0}
+  .path{grid-template-columns:1fr}
+  .now{grid-template-columns:1fr}
+  .mat{grid-template-columns:1fr}
+  .ph.s,.ph.w{grid-column:auto}
+  .ph.w img{aspect-ratio:16/10}
+  .ph.s img{aspect-ratio:1/1}
+  .sign{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:.01ms!important;animation-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Back to top"><img src="img/logo-white.webp" alt="Davie Designer Dental, Implant and Cosmetic Center" width="165" height="66"></a>
+    <nav class="steps" aria-label="Sections">
+      <a href="#hoy" aria-label="01 Today"><b>01</b><span class="t">Today</span></a>
+      <a href="#propuesta" aria-label="02 Proposal"><b>02</b><span class="t">Proposal</span></a>
+      <a href="#material" aria-label="03 Material"><b>03</b><span class="t">Material</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow rv">Social media proposal</div>
+        <h1 class="rv" style="--d:.06s">Your social media, worthy of <em>your practice</em>.</h1>
+        <p class="lead rv" style="--d:.12s">Davie Designer Dental has 4.9 stars on Google. Here is a sample of how your Instagram and Facebook could show it.</p>
+        <div class="for rv" style="--d:.18s">Prepared for <b>Dr. Khan</b> · Davie, FL</div>
+        <div class="path rv" style="--d:.24s">
+          <a href="#hoy"><small>01</small><span>Where you are today</span></a>
+          <a href="#propuesta"><small>02</small><span>How it could look</span></a>
+          <a href="#material"><small>03</small><span>Material we already have</span></a>
+        </div>
+      </div>
+      <figure class="rv" style="--d:.12s"><img src="img/consultorio.webp" alt="Dr. Adil Khan and Dr. Omair Khan with two patients in the waiting area of Davie Designer Dental" width="802" height="635"></figure>
+    </div>
+  </section>
+
+  <section class="blk" id="hoy">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="num">01</span>
+        <h2>A reputation that is already earned</h2>
+        <p>Your patients speak well of you on Google. Your social profiles can tell that same story.</p>
+      </div>
+
+      <div class="proof">
+        <div class="score rv">
+          <div class="row">
+            <div><span class="big">4.9</span><span class="l">rating on Google</span></div>
+            <div><span class="big">776</span><span class="l">reviews on Google</span></div>
+          </div>
+          <div class="stars" role="img" aria-label="5 stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.9-4.800 4.600 1.200 6.600L12 17.500 6.100 20.700l1.200-6.600L2.500 9.500l6.600-.9z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.9-4.800 4.600 1.200 6.600L12 17.500 6.100 20.700l1.200-6.600L2.500 9.500l6.600-.9z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.9-4.800 4.600 1.200 6.600L12 17.500 6.100 20.700l1.200-6.600L2.500 9.500l6.600-.9z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.9-4.800 4.600 1.200 6.600L12 17.500 6.100 20.700l1.200-6.600L2.500 9.500l6.600-.9z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.9-4.800 4.600 1.200 6.600L12 17.500 6.100 20.700l1.200-6.600L2.500 9.500l6.600-.9z"/></svg>
+          </div>
+          <p>Strong numbers like these are what a new patient looks for before they call.</p>
+        </div>
+        <figure class="shot rv" style="--d:.08s">
+          <button type="button" data-zoom="img/hoy-google.webp" data-alt="Google listing for Davie Designer Dental with a 4.9 rating" aria-label="Enlarge the Google listing"><img src="img/hoy-google.webp" alt="Google listing for Davie Designer Dental: 4.9 stars, Dentist, with a Book online button and the address in Davie" width="812" height="760" loading="lazy"></button>
+          <figcaption><b>Your Google listing</b><small>Your best first impression, one search away.</small></figcaption>
+        </figure>
+      </div>
+
+      <div class="quote rv">
+        <div class="stars" role="img" aria-label="5 stars">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.9-4.800 4.600 1.200 6.600L12 17.500 6.100 20.700l1.200-6.600L2.500 9.500l6.600-.9z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.9-4.800 4.600 1.200 6.600L12 17.500 6.100 20.700l1.200-6.600L2.500 9.500l6.600-.9z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.9-4.800 4.600 1.200 6.600L12 17.500 6.100 20.700l1.200-6.600L2.500 9.500l6.600-.9z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.9-4.800 4.600 1.200 6.600L12 17.500 6.100 20.700l1.200-6.600L2.500 9.500l6.600-.9z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.9-4.800 4.600 1.200 6.600L12 17.500 6.100 20.700l1.200-6.600L2.500 9.500l6.600-.9z"/></svg>
+        </div>
+        <blockquote>“Everyone there is incredibly welcoming and very attentive- dedicated to making their patients happy and comfortable.”</blockquote>
+        <cite>Taylor W., Google review, October 2026</cite>
+      </div>
+
+      <div class="now">
+        <div class="rv">
+          <h3>Instagram</h3>
+          <p>A blank canvas. We build it with your logo and colors from the very first post.</p>
+        </div>
+        <div class="rv" style="--d:.08s">
+          <h3>Facebook</h3>
+          <p>Your page, Davie Designer Dental - Dr. Adil Khan, is ready to share the same content.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="propuesta">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="num">02</span>
+        <h2>How your Instagram could look</h2>
+        <p>Your logo as the profile photo, highlights by treatment and a grid with its own design, in the gold and charcoal of your brand.</p>
+      </div>
+
+      <div class="stage">
+        <div class="notes l">
+          <div class="note rv"><h3>A profile with your brand</h3><p>Your logo, your address and clear buttons to book online, call or get directions.</p></div>
+          <div class="note rv" style="--d:.08s"><h3>Highlights by treatment</h3><p>Implants, veneers, Invisalign and emergency care, easy to find in one tap.</p></div>
+          <div class="note rv" style="--d:.16s"><h3>A consistent grid</h3><p>Every post in the same style, so your profile is recognizable at a glance.</p></div>
+        </div>
+
+        <div class="phone-col rv" style="--d:.08s">
+          <button class="phone" type="button" data-zoom="img/feed.webp" data-alt="Proposed Instagram feed for Davie Designer Dental" aria-label="Enlarge the proposed feed">
+            <span class="screen"><img src="img/feed.webp" alt="Proposed Instagram feed: profile with the Davie Designer Dental logo, highlights by treatment and a grid of six designed posts" width="1080" height="1951"></span>
+            <span class="zoom" aria-hidden="true">Tap to enlarge</span>
+          </button>
+        </div>
+
+        <div class="notes r">
+          <div class="note rv"><h3>Content that explains</h3><p>Short messages about implants, snap-on dentures, veneers and Invisalign, always with a clear next step.</p></div>
+          <div class="note rv" style="--d:.08s"><h3>Your real team</h3><p>Photos and short videos of Dr. Adil Khan, Dr. Omair Khan and your office.</p></div>
+          <div class="note rv" style="--d:.16s"><h3>Your reviews, front and center</h3><p>Patient words from Google, shared with the same look as the rest of the profile.</p></div>
+        </div>
+      </div>
+
+      <div class="posts-head rv">
+        <div>
+          <h3>Six examples, up close</h3>
+          <p>Swipe to see more. Tap to enlarge.</p>
+        </div>
+        <div class="arrows">
+          <button type="button" id="prev" aria-label="Previous posts"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button type="button" id="next" aria-label="Next posts"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <div class="rail rv" id="rail" aria-label="Proposed posts">
+        <button class="post" type="button" data-zoom="img/post1.webp" data-alt="Proposed post 1"><img src="img/post1.webp" alt="Proposed post 1: Meet your implant and cosmetic team, with Dr. Adil Khan and Dr. Omair Khan" width="900" height="1125" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post2.webp" data-alt="Proposed post 2"><img src="img/post2.webp" alt="Proposed post 2: Replace missing teeth with implants" width="900" height="1125" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post3.webp" data-alt="Proposed post 3"><img src="img/post3.webp" alt="Proposed post 3: A brighter smile, by design, with whitening, veneers and Invisalign" width="900" height="1125" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post4.webp" data-alt="Proposed post 4"><img src="img/post4.webp" alt="Proposed post 4: Dental emergency? Call us" width="900" height="1125" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post5.webp" data-alt="Proposed post 5"><img src="img/post5.webp" alt="Proposed post 5: a patient review from Google with the 4.9 rating" width="900" height="1125" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post6.webp" data-alt="Proposed post 6"><img src="img/post6.webp" alt="Proposed post 6: Your next visit starts online" width="900" height="1125" loading="lazy"></button>
+      </div>
+
+      <div class="fb rv">
+        <div>
+          <h3>Facebook, always up to date</h3>
+          <p>The same posts, shared on your Facebook page, so patients who follow you there see the same story.</p>
+        </div>
+        <div class="th">
+          <button type="button" data-zoom="img/post2.webp" data-alt="Proposed post 2" aria-label="Enlarge post 2"><img src="img/post2.webp" alt="Implants post" width="300" height="375" loading="lazy"></button>
+          <button type="button" data-zoom="img/post5.webp" data-alt="Proposed post 5" aria-label="Enlarge post 5"><img src="img/post5.webp" alt="Review post" width="300" height="375" loading="lazy"></button>
+          <button type="button" data-zoom="img/post1.webp" data-alt="Proposed post 1" aria-label="Enlarge post 1"><img src="img/post1.webp" alt="Team post" width="300" height="375" loading="lazy"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="material">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="num">03</span>
+        <h2>You already have great material</h2>
+        <p>These are the real photos we would use to put faces and places behind every post.</p>
+      </div>
+      <div class="mat">
+        <figure class="ph s rv"><button type="button" data-zoom="img/dr-adil.webp" data-alt="Dr. Adil Khan"><img src="img/dr-adil.webp" alt="Portrait of Dr. Adil Khan in a white coat, smiling outdoors" width="578" height="660" loading="lazy"></button><figcaption>Dr. Adil Khan</figcaption></figure>
+        <figure class="ph s rv" style="--d:.08s"><button type="button" data-zoom="img/dr-omair.webp" data-alt="Dr. Omair Khan"><img src="img/dr-omair.webp" alt="Portrait of Dr. Omair Khan in a gray suit" width="578" height="660" loading="lazy"></button><figcaption>Dr. Omair Khan</figcaption></figure>
+        <figure class="ph s rv" style="--d:.16s"><button type="button" data-zoom="img/equipo.webp" data-alt="The Davie Designer Dental team"><img src="img/equipo.webp" alt="The Davie Designer Dental team standing together in the office" width="500" height="389" loading="lazy"></button><figcaption>Your team</figcaption></figure>
+        <figure class="ph w rv"><button type="button" data-zoom="img/consultorio.webp" data-alt="The doctors with patients in the waiting area"><img src="img/consultorio.webp" alt="Dr. Adil Khan and Dr. Omair Khan with two patients in the waiting area" width="802" height="635" loading="lazy"></button><figcaption>In the office</figcaption></figure>
+        <figure class="ph w rv" style="--d:.08s"><button type="button" data-zoom="img/recepcion.webp" data-alt="Reception and lounge"><img src="img/recepcion.webp" alt="Reception desk and lounge of Davie Designer Dental" width="1600" height="900" loading="lazy"></button><figcaption>Reception and lounge</figcaption></figure>
+      </div>
+      <p class="mat-note">Photos taken from your website.</p>
+    </div>
+  </section>
+
+  <section class="close">
+    <div class="wrap">
+      <div class="rv">
+        <h2>Monthly management of your social media, <em>so you can focus on your patients</em>.</h2>
+        <p class="lead">We take care of your Instagram and Facebook: we create the content, publish it and keep your profiles active.</p>
+      </div>
+      <div class="svc">
+        <div class="rv">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r=".8"/></svg>
+          <b>Instagram and Facebook</b>Management of both profiles, with your logo and your colors.
+        </div>
+        <div class="rv" style="--d:.06s">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.500v5l4.200-2.500z"/></svg>
+          <b>Content and Reels</b>Designed posts and short videos with real photos of your office.
+        </div>
+        <div class="rv" style="--d:.12s">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.300M20 12a8 8 0 0 1-14 5.300"/><path d="M18 3v4h-4M6 21v-4h4"/></svg>
+          <b>Every month</b>An active, up to date profile, with no extra work for you.
+        </div>
+      </div>
+      <div class="sign rv">
+        <p><b>Santiago Capelli · Ticca Mkt</b>If you are interested, we would be happy to set up a short call.</p>
+        <ul class="contact">
+          <li><a href="https://ticca.agency" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.600 2.800 3.900 5.800 3.900 9s-1.300 6.200-3.900 9c-2.600-2.800-3.900-5.800-3.900-9S9.400 5.800 12 3z"/></svg>ticca.agency</a></li>
+          <li><a href="mailto:capellisantiagoemp@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.500 7.500l8.500 6 8.500-6"/></svg>capellisantiagoemp@gmail.com</a></li>
+        </ul>
+      </div>
+      <footer>
+        <span>Proposal prepared for Davie Designer Dental · 3890 SW 64th Ave, Unit 112, Davie, FL 33314</span>
+        <span>Tel. (954) 483-3009</span>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<dialog id="lb" aria-label="Enlarged image">
+  <button type="button" id="lbx" aria-label="Close">×</button>
+  <div class="box" id="lbbox"><img id="lbimg" alt=""></div>
+</dialog>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var rv = document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.05,rootMargin:'0px 0px -4% 0px'});
+    rv.forEach(function(el){io.observe(el)});
+    setTimeout(function(){rv.forEach(function(el){el.classList.add('in')})},2500);
+  } else rv.forEach(function(el){el.classList.add('in')});
+  var links = document.querySelectorAll('.steps a');
+  if('IntersectionObserver' in window){
+    var so = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+    ['hoy','propuesta','material'].forEach(function(id){so.observe(document.getElementById(id))});
+  }
+  var lb=document.getElementById('lb'),img=document.getElementById('lbimg'),box=document.getElementById('lbbox');
+  function open(src,alt){img.src=src;img.alt=alt||'';box.scrollTop=0;if(lb.showModal)lb.showModal();else lb.setAttribute('open','')}
+  function close(){lb.close?lb.close():lb.removeAttribute('open')}
+  document.querySelectorAll('[data-zoom]').forEach(function(el){el.addEventListener('click',function(){open(el.dataset.zoom,el.dataset.alt)})});
+  document.getElementById('lbx').addEventListener('click',close);
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target===box)close()});
+  var rail=document.getElementById('rail');
+  function step(d){rail.scrollBy({left:d*(rail.querySelector('.post').offsetWidth+16),behavior:reduce?'auto':'smooth'})}
+  document.getElementById('prev').addEventListener('click',function(){step(-1)});
+  document.getElementById('next').addEventListener('click',function(){step(1)});
+})();
+</script>
+</body>
+</html>
